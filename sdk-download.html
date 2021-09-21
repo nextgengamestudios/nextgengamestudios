@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="pl" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Nextgen Game Studios - SDK</title>
+        <meta name="author" content="tomeczeklmaodev">
+        <meta name="description" content="strona internetowa projektu firmy na e-ekonomie">
+        <link rel="icon" type="image/x-icon" href="img/favicon_new.ico">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css?v=1.0"> <!-- minified CSS file doesn't work anymore, using normal .css file while trying to fix .min.css -->
+        <!-- these fonts are optional, they may be used in the future though
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
+        -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <script src="https://kit.fontawesome.com/4140c3b052.js" crossorigin="anonymous"></script>
+        <script>
+            console.log("If you can see this, the 'scripts.js' file has loaded correctly and is ready for future use.");
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="container">
+            <div id="header">
+                <a href="index.html" style="color: #faf9f8; text-decoration: none;"><h1 style="font-weight: 500;font-size: 40pt;margin-left: 55px;padding-top: 25px;">Nextgen Game Studios</h1></a>
+                <div id="nav-links">
+                    <!-- elements of the list below were somehow in reverse order, using JS to fix that (doesn't work anyway lmao) -->
+                    <script>
+                        $(document).ready(function() {
+                            var list = $('ul');
+                            var listItems = list.children('li');
+                            list.append(listItems.get().reverse());
+                        });
+                    </script>
+                    <ul style="margin-left: 1200px;margin-top: -30px;float: right;">
+                        <li><a href="not-found.html#games" class="link" style="color: #faf9f8;"><i class="fas fa-gamepad"></i> Gry</a>&nbsp;&nbsp;&nbsp;</li>
+                        <li><a href="sdk-download.html" class="link" style="color: #faf9f8;"><i class="fas fa-code"></i> SDK</a>&nbsp;&nbsp;&nbsp;</li>
+                        <li><a href="community.html" class="link" style="color: #faf9f8;"><i class="fas fa-comments"></i> Community</a>&nbsp;&nbsp;&nbsp;</li>
+                        <li><a href="about-us.html" class="link" style="color: #faf9f8;"><i class="fas fa-question-circle"></i> O nas</a>&nbsp;&nbsp;&nbsp;</li>
+                        <li><a href="contact.html" class="link" style="color: #faf9f8;"><i class="fas fa-id-card"></i> Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                Przepraszamy, ale tymczasowo możliwość pobierania SDK została wstrzymana.<br>
+                Niedługo ponownie wznowimy możliwość pobierania. Dziękujemy za wyrozumiałość.<br><br><br>
+                <button onclick="window.location.href='index.html'" class="glass-btn" style="color: #faf9f8;cursor: pointer;"><h4 style="font-weight: 400;font-size: 18px;">Powrót do strony głównej.</h4></button>&nbsp;&nbsp;&nbsp;
+                <button onclick="window.location.href='#enable-notifications'" class="glass-btn" style="color: #faf9f8;cursor: pointer;"><h4 style="font-weight: 400;font-size: 18px;">Włącz powiadomienia</h4></button>
+            </div>
+            <div id="footer">
+                <i>copyright &copy; <a href="index.html" class="link" style="color: #faf9f8;">Nextgen Studios</a> 2021 - <script>document.write(new Date().getFullYear());</script>. Strona stworzona przez <a href="https://github.com/tomeczeklmaodev/#--xtkg0d4" target="_blank" rel="noopener noreferrer" class="link" style="color: #faf9f8;">tomeczeklmaodev</a>&nbsp;|&nbsp;<a href="sources.html" target="_blank" rel="noopener noreferrer" class="link" style="color: #faf9f8;">Źródła</a></i>
+            </div>
+        </div>
+        <!-- Display loader while the website loads -->
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        <script>
+            $(window).on("load",function(){
+              $(".loader-wrapper").fadeOut("slow");
+            });
+        </script>
+        <script src="js/scripts.js" async defer></script>
+    </body>
+</html>
