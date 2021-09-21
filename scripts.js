@@ -1,1 +1,0 @@
-console.log("If you can see this, the 'scripts.js' file has loaded correctly and is ready for future use.");
