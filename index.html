@@ -1,93 +1,173 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-<html lang="pl" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Nextgen Game Studios - Strona główna</title>
-        <meta name="author" content="tomeczeklmaodev">
-        <meta name="description" content="strona internetowa projektu firmy na e-ekonomie">
-        <link rel="icon" type="image/x-icon" href="img/favicon_new.ico">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css?v=1.0"> <!-- minified CSS file doesn't work anymore, using normal .css file while trying to fix .min.css -->
-        <!-- these fonts are optional, they may be used in the future though
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
-        -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-        <script src="https://kit.fontawesome.com/4140c3b052.js" crossorigin="anonymous"></script>
-        <script>
-            console.log("If you can see this, the 'scripts.js' file has loaded correctly and is ready for future use.");
-        </script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div id="container">
-            <div id="header">
-                <a href="#" style="color: #faf9f8; text-decoration: none;"><h1 style="font-weight: 500;font-size: 40pt;margin-left: 55px;padding-top: 25px;">Nextgen Game Studios</h1></a>
-                <div id="nav-links">
-                    <!-- elements of the list below were somehow in reverse order, using JS to fix that (doesn't work anyway lmao) -->
-                    <script>
-                        $(document).ready(function() {
-                            var list = $('ul');
-                            var listItems = list.children('li');
-                            list.append(listItems.get().reverse());
-                        });
-                    </script>
-                    <ul class="ul-nav">
-                        <li><a href="not-found.html#games" class="link" style="color: #faf9f8;"><i class="fas fa-gamepad"></i> Gry</a>&nbsp;&nbsp;&nbsp;</li>
-                        <li><a href="sdk-download.html" class="link" style="color: #faf9f8;"><i class="fas fa-code"></i> SDK</a>&nbsp;&nbsp;&nbsp;</li>
-                        <li><a href="community.html" class="link" style="color: #faf9f8;"><i class="fas fa-comments"></i> Community</a>&nbsp;&nbsp;&nbsp;</li>
-                        <li><a href="about-us.html" class="link" style="color: #faf9f8;"><i class="fas fa-question-circle"></i> O nas</a>&nbsp;&nbsp;&nbsp;</li>
-                        <li><a href="contact.html" class="link" style="color: #faf9f8;"><i class="fas fa-id-card"></i> Kontakt</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div id="content">
-                Najbardziej wciągające gry to Nasza specjalność!<br>
-                Nasze gry są tworzone od podstaw przez mały zespół, który przez wiele godzin pracuje,<br>
-                aby wszystko było dopracowane pod każdym możliwym kątem.<br><br>
-                Najnowsze wpisy od deweloperów:<br><br>
-                <div id="news-section">
-                    <div id="card">
-                        <img src="img/update-img-temp-transparent.png" width="96px" height="96px" style="margin-top: 15px;"><br><br>
-                        Update 0.0.1<br><br><br>
-                        <a href="#news-box-1" class="link" style="color: #faf9f8;font-size: 14px;">Więcej informacji &#10132;</a>
-                    </div>
-                    <div id="card" class="mid-card-margin">
-                        <img src="img/update-img-temp-transparent.png" width="96px" height="96px" style="margin-top: 15px;"><br><br>
-                        Update 0.0.2<br><br><br>
-                        <a href="#news-box-2" class="link" style="color: #faf9f8;font-size: 14px;">Więcej informacji &#10132;</a>
-                    </div>
-                    <div id="card">
-                        <img src="img/update-img-temp-transparent.png" width="96px" height="96px" style="margin-top: 15px;"><br><br>
-                        Update 0.0.3<br><br><br>
-                        <a href="#news-box-3" class="link" style="color: #faf9f8;font-size: 14px;">Więcej informacji &#10132;</a>
-                    </div>
-                </div>
-            </div>
-            <div id="footer">
-                <i>copyright &copy; <a href="#" class="link" style="color: #faf9f8;">Nextgen Studios</a> 2021 - <script>document.write(new Date().getFullYear());</script>. Strona stworzona przez <a href="https://github.com/tomeczeklmaodev/#--xtkg0d4" target="_blank" rel="noopener noreferrer" class="link" style="color: #faf9f8;">tomeczeklmaodev</a>&nbsp;|&nbsp;<a href="sources.html" target="_blank" rel="noopener noreferrer" class="link" style="color: #faf9f8;">Źródła</a></i>
-            </div>
-        </div>
-        <!-- Display loader while the website loads -->
-        <div class="loader-wrapper">
-            <span class="loader"><span class="loader-inner"></span></span>
-        </div>
-        <script>
-            $(window).on("load",function(){
-              $(".loader-wrapper").fadeOut("slow");
-            });
-        </script>
-        <script src="js/scripts.js" async defer></script>
-    </body>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Nextgen Game Studios</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="icon" type="image/x-icon" href="images/favicon_new.ico">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+			body {
+				background-color: #43cea2;
+				background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #43cea2 15%, #185a9d 85%);
+				background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #43cea2 15%, #185a9d 85%);
+				background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #43cea2 15%, #185a9d 85%);
+				background-image: url("images/overlay.png"), linear-gradient(45deg, #43cea2 15%, #185a9d 85%);
+			}
+		</style>
+		<script>
+			function randomNumber(min, max) {
+				min = Math.ceil(min);
+  				max = Math.floor(max);
+  				return Math.floor(Math.random() * (max - min) + min);
+			}
+		</script>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<header id="header" class="alt">
+				<span class="logo"><img src="images/favicon.png" width="150px" alt=""></span>
+				<h1>Nextgen Game Studios</h1>
+				<p>Najbardziej wciągające gry to nasza specjalność!<br>
+				strona stworzona przez <a href="https://github.com/tomeczeklmaodev/#--xtkg0d4" target="_blank" rel="noopener noreferrer">tomeczeklmaodev</a> dla <a href="https://nextgengamestudios.github.io">Nextgen Game Studios</a>.</p>
+			</header>
+			<nav id="nav">
+				<ul>
+					<li><a href="#introduction" class="active">Wprowadzenie</a></li>
+					<li><a href="#posts">Wpisy</a></li>
+					<li><a href="#server-game-statistics">Statystyki</a></li>
+					<li><a href="#sdk">SDK</a></li>
+				</ul>
+			</nav>
+			<div id="main">
+				<section id="introduction" class="main">
+					<div class="spotlight">
+						<div class="content">
+							<header class="major">
+								<h2>Wprowadzenie</h2>
+							</header>
+							<p>Nasza gra to taktyczny FPS opierający się na silniku <a href="https://unity.com/" target="_blank" rel="noopener noreferrer">Unity</a> oraz wykorzystujący funkcje stworzone przez <a href="#our-team">naszych programistów</a>, aby wszystkie elementy były jak najbardziej realistyczne oraz były rzeczywistym odwzorowaniem przedmiotów z prawdziwego życia.</p>
+							<ul class="actions">
+								<li><a href="#game-download" class="button">Więcej</a></li>
+							</ul>
+						</div>
+						<span class="image"><img src="images/image-game-cropped.png" width="318" alt=""></span>
+					</div>
+				</section>
+				<section id="posts" class="main special">
+					<header class="major">
+						<h2>Wpisy</h2>
+					</header>
+					<ul class="features">
+						<li>
+							<span class="icon solid major style1 fa-edit"></span>
+							<h3><a href="#developer-posts:Update-1.0">Aktualizacja 1.0</a></h3>
+							<p>Opis 1</p>
+						</li>
+						<li>
+							<span class="icon major style3 fa-edit"></span>
+							<h3><a href="#developer-posts:Update-2.0">Aktualizacja 2.0</a></h3>
+							<p>Opis 2</p>
+						</li>
+						<li>
+							<span class="icon major style5 fa-edit"></span>
+							<h3><a href="#developer-posts:Update-3.0">Aktualizacja 3.0</a></h3>
+							<p>Opis 3</p>
+						</li>
+					</ul>
+					<footer class="major">
+						<ul class="actions special">
+							<li><a href="#more-developer-posts" class="button">Więcej wpisów</a></li>
+						</ul>
+					</footer>
+				</section>
+				<section id="server-game-statistics" class="main special">
+					<header class="major">
+						<h2>Statystyki</h2>
+						<p>Poniżej możesz sprawdzić status naszych serwerów<br>
+						oraz inne statystyki dotyczące naszej gry.</p>
+					</header>
+					<ul class="statistics">
+						<li class="style1">
+							<span class="icon solid fa-server"></span>
+							<strong>0</strong> Serwerów online
+						</li>
+						<li class="style2">
+							<span class="icon fa-folder-open"></span>
+							<strong>0</strong> Plików przesłanych
+						</li>
+						<li class="style3">
+							<span class="icon solid fa-signal"></span>
+							<strong>0</strong> Opóźnienia
+						</li>
+						<li class="style4">
+							<span class="icon solid fa-laptop"></span>
+							<strong>0</strong> Aktywnych graczy
+						</li>
+						<li class="style5">
+							<span class="icon fa-gem"></span>
+							<strong>0</strong> Kont premium
+						</li>
+					</ul>
+					<p class="content">Staramy się utrzymać nasze wszystkie serwery online, aby dostarczyć naszym użytkownikom najlepsze doznania, bez zacięć, nagłego wyrzucenia z serwera z powodu braku prądu w naszej serwerowni oraz bez zbędnego czasu oczekiwania. Nasze serwery mają wielordzeniowe procesory, pamięć RAM 64GB oraz ultra szybkie dyski SSD NVMe o prędkościach sięgających nawet 8000MB/s odczytu i 6000MB/s zapisu. Nie wierzysz nam? Sprawdź tą <a href="#server-speed">stronę</a> pokazującą prędkości poszczególnych elementów w czasie rzeczywistym.</p>
+					<footer class="major">
+						<ul class="actions special">
+							<li><a href="#more-statistics" class="button">Więcej statystyk</a></li>
+						</ul>
+					</footer>
+				</section>
+				<section id="sdk" class="main special">
+					<header class="major">
+						<h2>Software Development Kit</h2>
+						<p>Zacznij używać naszego zaawansowanego SDK, aby tworzyć modyfikacje do gry,<br>
+						oraz pomóż ulepszać naszą grę wysyłając dane diagnostyczne w postaci raportów z błędami.</p>
+					</header>
+					<footer class="major">
+						<ul class="actions special">
+							<li><a href="#get-sdk" class="button primary">Rozpocznij</a></li>
+							<li><a href="#more-about-sdk" class="button">Więcej</a></li>
+						</ul>
+					</footer>
+				</section>
+			</div>
+			<footer id="footer">
+				<section>
+					<h2>Nextgen API &bull; Nextgen SDK</h2>
+					<p>Użyj naszego zaawansowanego API oraz SDK, aby tworzyć modyfikacje do {nazwa_gry} oraz do ulepszania naszej gry!</p>
+					<ul class="actions">
+						<li><a href="documentation.html" class="button">Więcej</a></li>
+					</ul>
+				</section>
+				<section>
+					<h2>Kontakt z nami</h2>
+					<dl class="alt">
+						<dt>Adres</dt>
+						<dd>Nowa 60 &bull; Tarnowo Podgórne, 62-080 &bull; Polska</dd>
+						<dt>Telefon</dt>
+						<dd>Tymczasowo brak</dd>
+						<dt>Email</dt>
+						<dd><a href="#">support@nextgenstudios.pl</a></dd>
+					</dl>
+					<ul class="icons">
+						<li><a href="#twitter" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+						<li><a href="#discord" class="icon brands fa-discord alt"><span class="label">Discord</span></a></li>
+						<li><a href="#instagram" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+						<li><a href="#github" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+						<li><a href="#youtube" class="icon brands fa-youtube alt"><span class="label">YouTube</span></a></li>
+					</ul>
+				</section>
+				<p class="copyright">&copy; Nextgen Game Studios 2021 - <script>document.write(new Date().getFullYear());</script> &mdash; <a href="#discordinvite--xtkg0d4">Serwer Discord</a>.<br>Użyte technologie: HTML, CSS, JavaScript, SASS, jQuery</p>
+				<!-- target="_blank" rel="noopener noreferrer" -->
+			</footer>
+		</div>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>
