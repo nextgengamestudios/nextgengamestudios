@@ -1,173 +1,234 @@
-<!DOCTYPE HTML>
-<html lang="pl-PL">
-	<head>
-		<title>Nextgen Game Studios</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<link rel="icon" type="image/x-icon" href="images/favicon_new.ico">
-		<link rel="stylesheet" href="assets/css/main.css">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
-			body {
-				background-color: #43cea2;
-				background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #43cea2 15%, #185a9d 85%);
-				background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #43cea2 15%, #185a9d 85%);
-				background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #43cea2 15%, #185a9d 85%);
-				background-image: url("images/overlay.png"), linear-gradient(45deg, #43cea2 15%, #185a9d 85%);
-			}
-		</style>
-		<script>
-			function randomNumber(min, max) {
-				min = Math.ceil(min);
-  				max = Math.floor(max);
-  				return Math.floor(Math.random() * (max - min) + min);
-			}
-		</script>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<header id="header" class="alt">
-				<a href="#" style="cursor: default;"><span class="logo"><img src="images/favicon.png" width="150px" alt=""></span></a>
-				<h1>Nextgen Game Studios</h1>
-				<p>Najbardziej wciągające gry to nasza specjalność!<br>
-				strona stworzona przez <a href="https://github.com/tomeczeklmaodev/#--xtkg0d4" target="_blank" rel="noopener noreferrer">tomeczeklmaodev</a> dla <a href="https://nextgengamestudios.github.io">Nextgen Game Studios</a>.</p>
-			</header>
-			<nav id="nav">
-				<ul>
-					<li><a href="#introduction" class="active">Wprowadzenie</a></li>
-					<li><a href="#posts">Wpisy</a></li>
-					<li><a href="#server-game-statistics">Statystyki</a></li>
-					<li><a href="#sdk">SDK</a></li>
-				</ul>
-			</nav>
-			<div id="main">
-				<section id="introduction" class="main">
-					<div class="spotlight">
-						<div class="content">
-							<header class="major">
-								<h2>Wprowadzenie</h2>
-							</header>
-							<p>Nasza gra to taktyczny FPS opierający się na silniku <a href="https://unity.com/" target="_blank" rel="noopener noreferrer">Unity</a> oraz wykorzystujący funkcje stworzone przez <a href="#our-team">naszych programistów</a>, aby wszystkie elementy były jak najbardziej realistyczne oraz były rzeczywistym odwzorowaniem przedmiotów z prawdziwego życia.</p>
-							<ul class="actions">
-								<li><a href="#game-download" class="button">Więcej</a></li>
-							</ul>
-						</div>
-						<span class="image"><img src="images/image-game-cropped.png" width="318" alt=""></span>
-					</div>
-				</section>
-				<section id="posts" class="main special">
-					<header class="major">
-						<h2>Wpisy</h2>
-					</header>
-					<ul class="features">
-						<li>
-							<span class="icon solid major style1 fa-edit"></span>
-							<h3><a href="#developer-posts:Update-1.0">Aktualizacja 1.0</a></h3>
-							<p>Opis 1</p>
-						</li>
-						<li>
-							<span class="icon major style3 fa-edit"></span>
-							<h3><a href="#developer-posts:Update-2.0">Aktualizacja 2.0</a></h3>
-							<p>Opis 2</p>
-						</li>
-						<li>
-							<span class="icon major style5 fa-edit"></span>
-							<h3><a href="#developer-posts:Update-3.0">Aktualizacja 3.0</a></h3>
-							<p>Opis 3</p>
-						</li>
-					</ul>
-					<footer class="major">
-						<ul class="actions special">
-							<li><a href="#more-developer-posts" class="button">Więcej wpisów</a></li>
-						</ul>
-					</footer>
-				</section>
-				<section id="server-game-statistics" class="main special">
-					<header class="major">
-						<h2>Statystyki</h2>
-						<p>Poniżej możesz sprawdzić status naszych serwerów<br>
-						oraz inne statystyki dotyczące naszej gry.</p>
-					</header>
-					<ul class="statistics">
-						<li class="style1">
-							<span class="icon solid fa-server"></span>
-							<strong>0</strong> Serwerów online
-						</li>
-						<li class="style2">
-							<span class="icon fa-folder-open"></span>
-							<strong>0</strong> Plików przesłanych
-						</li>
-						<li class="style3">
-							<span class="icon solid fa-signal"></span>
-							<strong>0</strong> Opóźnienia
-						</li>
-						<li class="style4">
-							<span class="icon solid fa-laptop"></span>
-							<strong>0</strong> Aktywnych graczy
-						</li>
-						<li class="style5">
-							<span class="icon fa-gem"></span>
-							<strong>0</strong> Kont premium
-						</li>
-					</ul>
-					<p class="content">Staramy się utrzymać nasze wszystkie serwery online, aby dostarczyć naszym użytkownikom najlepsze doznania, bez zacięć, nagłego wyrzucenia z serwera z powodu braku prądu w naszej serwerowni oraz bez zbędnego czasu oczekiwania. Nasze serwery mają wielordzeniowe procesory, pamięć RAM 64GB oraz ultra szybkie dyski SSD NVMe o prędkościach sięgających nawet 8000MB/s odczytu i 6000MB/s zapisu. Nie wierzysz nam? Sprawdź tą <a href="servers.json">stronę</a> pokazującą prędkości poszczególnych elementów w czasie rzeczywistym.</p>
-					<footer class="major">
-						<ul class="actions special">
-							<li><a href="#more-statistics" class="button">Więcej statystyk</a></li>
-						</ul>
-					</footer>
-				</section>
-				<section id="sdk" class="main special">
-					<header class="major">
-						<h2>Software Development Kit</h2>
-						<p>Zacznij używać naszego zaawansowanego SDK, aby tworzyć modyfikacje do gry,<br>
-						oraz pomóż ulepszać naszą grę wysyłając dane diagnostyczne w postaci raportów z błędami.</p>
-					</header>
-					<footer class="major">
-						<ul class="actions special">
-							<li><a href="#get-sdk" class="button primary">Rozpocznij</a></li>
-							<li><a href="documentation.html" class="button">Więcej</a></li>
-						</ul>
-					</footer>
-				</section>
-			</div>
-			<footer id="footer">
-				<section>
-					<h2>Dołącz do nas</h2>
-					<p>Rozpocznij współpracę z nami już dzisiaj. Wyślij wiadomość dzisiaj, odpowiemy na nią w ciągu 24 godzin.</p>
-					<ul class="actions">
-						<li><a href="#join-us" class="button">Dołącz</a></li>
-					</ul>
-				</section>
-				<section>
-					<h2>Kontakt z nami</h2>
-					<dl class="alt">
-						<dt>Adres</dt>
-						<dd>Nowa 60 &bull; Tarnowo Podgórne, 62-080 &bull; Polska</dd>
-						<dt>Telefon</dt>
-						<dd>Tymczasowo brak</dd>
-						<dt>Email</dt>
-						<dd><a href="support.json">support@nextgenstudios.pl</a></dd>
-					</dl>
-					<ul class="icons">
-						<li><a href="#twitter" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-						<li><a href="#discord" class="icon brands fa-discord alt"><span class="label">Discord</span></a></li>
-						<li><a href="#instagram" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-						<li><a href="#github" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-						<li><a href="#youtube" class="icon brands fa-youtube alt"><span class="label">YouTube</span></a></li>
-					</ul>
-				</section>
-				<p class="copyright">&copy; Nextgen Game Studios 2021 - <script>document.write(new Date().getFullYear());</script> &mdash; <a href="#discordinvite--xtkg0d4">Serwer Discord</a>.<br>Użyte technologie: HTML, CSS, JavaScript, SASS, jQuery<br><a href="team-members.html">Członkowie Nextgen Game Studios</a></p>
-				<!-- target="_blank" rel="noopener noreferrer" -->
-			</footer>
-		</div>
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nextgen Game Studios</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!--
+        For more customization options, we would advise
+        you to build your TailwindCSS from the source.
+        https://tailwindcss.com/docs/installation
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.2/tailwind.min.css">
+    <!-- Small CSS to Hide elements at 1520px size + adding smooth scrolling-->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+	
+        @media(max-width:1520px) {
+            .left-svg {
+                display: none;
+            }
+        }
+
+        /* small css for the mobile nav close */
+        #nav-mobile-btn.close span:first-child {
+            transform: rotate(45deg);
+            top: 4px;
+            position: relative;
+            background: #a0aec0;
+        }
+
+        #nav-mobile-btn.close span:nth-child(2) {
+            transform: rotate(-45deg);
+            margin-top: 0px;
+            background: #a0aec0;
+        }
+
+        .countdown-before-text::before {
+            content: "Aktualizacja strony za: ";
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden antialiased">
+    <!-- Header Section -->
+    <header class="relative z-50 w-full h-24">
+        <div class="container flex items-center justify-center h-full max-w-6xl px-8 mx-auto sm:justify-between xl:px-0">
+            <a href="#" class="relative flex items-center inline-block h-5 h-full font-black leading-none">
+                <img src="img/favicon.ico" x="0px" y="0px" width="32" height="32">
+                <span class="ml-3 text-xl text-gray-800">Nextgen Game Studios<span class="text-pink-500">.</span></span>
+            </a>
+            <div class="absolute left-0 flex-col items-center justify-center hidden w-full pb-8 mt-48 border-b border-gray-200 md:relative md:w-auto md:bg-transparent md:border-none md:mt-0 md:flex-row md:p-0 md:items-end md:flex md:justify-between">
+                <svg class="absolute top-0 left-0 hidden w-screen max-w-3xl -mt-64 -ml-12 lg:block" viewBox="0 0 818 815" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="c">
+                            <stop stop-color="#E614F2" offset="0%" />
+                            <stop stop-color="#FC3832" offset="100%" />
+                        </linearGradient>
+                        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="f">
+                            <stop stop-color="#657DE9" offset="0%" />
+                            <stop stop-color="#1C0FD7" offset="100%" />
+                        </linearGradient>
+                        <filter x="-4.7%" y="-3.3%" width="109.3%" height="109.3%" filterUnits="objectBoundingBox" id="a">
+                            <feOffset dy="8" in="SourceAlpha" result="shadowOffsetOuter1" />
+                            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+                            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" in="shadowBlurOuter1" />
+                        </filter>
+                        <filter x="-4.7%" y="-3.3%" width="109.3%" height="109.3%" filterUnits="objectBoundingBox" id="d">
+                            <feOffset dy="8" in="SourceAlpha" result="shadowOffsetOuter1" />
+                            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+                            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1" />
+                        </filter>
+                        <path d="M160.52 108.243h497.445c17.83 0 24.296 1.856 30.814 5.342 6.519 3.486 11.635 8.602 15.12 15.12 3.487 6.52 5.344 12.985 5.344 30.815v497.445c0 17.83-1.857 24.296-5.343 30.814-3.486 6.519-8.602 11.635-15.12 15.12-6.52 3.487-12.985 5.344-30.815 5.344H160.52c-17.83 0-24.296-1.857-30.814-5.343-6.519-3.486-11.635-8.602-15.12-15.12-3.487-6.52-5.343-12.985-5.343-30.815V159.52c0-17.83 1.856-24.296 5.342-30.814 3.486-6.519 8.602-11.635 15.12-15.12 6.52-3.487 12.985-5.343 30.815-5.343z" id="b" />
+                        <path d="M159.107 107.829H656.55c17.83 0 24.296 1.856 30.815 5.342 6.518 3.487 11.634 8.602 15.12 15.12 3.486 6.52 5.343 12.985 5.343 30.816V656.55c0 17.83-1.857 24.296-5.343 30.815-3.486 6.518-8.602 11.634-15.12 15.12-6.519 3.486-12.985 5.343-30.815 5.343H159.107c-17.83 0-24.297-1.857-30.815-5.343-6.519-3.486-11.634-8.602-15.12-15.12-3.487-6.519-5.343-12.985-5.343-30.815V159.107c0-17.83 1.856-24.297 5.342-30.815 3.487-6.519 8.602-11.634 15.12-15.12 6.52-3.487 12.985-5.343 30.816-5.343z" id="e" />
+                    </defs>
+                    <g fill="none" fill-rule="evenodd" opacity=".9">
+                        <g transform="rotate(65 416.452 409.167)">
+                            <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                            <use fill="url(#c)" xlink:href="#b" />
+                        </g>
+                        <g transform="rotate(29 421.929 414.496)">
+                            <use fill="#000" filter="url(#d)" xlink:href="#e" />
+                            <use fill="url(#f)" xlink:href="#e" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div id="nav-mobile-btn" class="absolute top-0 right-0 z-50 block w-6 mt-8 mr-10 cursor-pointer select-none md:hidden sm:mt-10">
+                <span class="block w-full h-1 mt-2 duration-200 transform bg-gray-800 rounded-full sm:mt-1"></span>
+                <span class="block w-full h-1 mt-1 duration-200 transform bg-gray-800 rounded-full"></span>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Section-->
+
+    <!-- Start Hero Section -->
+    <div class="relative items-center justify-center w-full overflow-x-hidden lg:pt-40 lg:pb-40 xl:pt-40 xl:pb-64">
+        <div
+            class="container flex flex-col items-center justify-between h-full max-w-6xl px-8 mx-auto -mt-32 lg:flex-row xl:px-0">
+            <div
+                class="z-30 flex flex-col items-center w-full max-w-xl pt-48 text-center lg:items-start lg:w-1/2 lg:pt-20 xl:pt-40 lg:text-left">
+                <h1 class="relative mb-4 text-3xl font-black leading-tight text-gray-900 sm:text-6xl xl:mb-8">Właśnie pracujemy nad nową stroną.</h1>
+                <a id="countdown" class="pr-0 mb-8 text-base text-gray-600 sm:text-lg xl:text-xl lg:pr-20 countdown-before-text"></a>
+                <!-- Supports section -->
+                <div class="flex-col hidden mt-12 sm:flex lg:mt-24">
+                    <p class="mb-4 text-sm font-medium tracking-widest text-gray-500 uppercase">Gra oraz SDK Dostępne na:</p>
+                    <div class="flex">
+                        <svg title="Windows" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="windows" class="svg-inline--fa fa-windows fa-w-14 h-8 mr-4 text-gray-500 duration-150 cursor-pointer fill-current transition-color hover:text-gray-600" role="img" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 448 512">
+                            <path fill="currentColor" d="M0 93.7l183.6-25.3v177.4H0V93.7zm0 324.6l183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z"></path>
+                        </svg>
+                        <svg x="0px" y="0px" width="32" height="32" viewBox="0 0 448 512" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linux" class="svg-inline--fa fa-linux fa-w-14 h-8 mr-4 text-gray-500 duration-150 cursor-pointer fill-current transition-color hover:text-gray-600" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="currentColor" d="M220.8 123.3c1 .5 1.8 1.7 3 1.7 1.1 0 2.8-.4 2.9-1.5.2-1.4-1.9-2.3-3.2-2.9-1.7-.7-3.9-1-5.5-.1-.4.2-.8.7-.6 1.1.3 1.3 2.3 1.1 3.4 1.7zm-21.9 1.7c1.2 0 2-1.2 3-1.7 1.1-.6 3.1-.4 3.5-1.6.2-.4-.2-.9-.6-1.1-1.6-.9-3.8-.6-5.5.1-1.3.6-3.4 1.5-3.2 2.9.1 1 1.8 1.5 2.8 1.4zM420 403.8c-3.6-4-5.3-11.6-7.2-19.7-1.8-8.1-3.9-16.8-10.5-22.4-1.3-1.1-2.6-2.1-4-2.9-1.3-.8-2.7-1.5-4.1-2 9.2-27.3 5.6-54.5-3.7-79.1-11.4-30.1-31.3-56.4-46.5-74.4-17.1-21.5-33.7-41.9-33.4-72C311.1 85.4 315.7.1 234.8 0 132.4-.2 158 103.4 156.9 135.2c-1.7 23.4-6.4 41.8-22.5 64.7-18.9 22.5-45.5 58.8-58.1 96.7-6 17.9-8.8 36.1-6.2 53.3-6.5 5.8-11.4 14.7-16.6 20.2-4.2 4.3-10.3 5.9-17 8.3s-14 6-18.5 14.5c-2.1 3.9-2.8 8.1-2.8 12.4 0 3.9.6 7.9 1.2 11.8 1.2 8.1 2.5 15.7.8 20.8-5.2 14.4-5.9 24.4-2.2 31.7 3.8 7.3 11.4 10.5 20.1 12.3 17.3 3.6 40.8 2.7 59.3 12.5 19.8 10.4 39.9 14.1 55.9 10.4 11.6-2.6 21.1-9.6 25.9-20.2 12.5-.1 26.3-5.4 48.3-6.6 14.9-1.2 33.6 5.3 55.1 4.1.6 2.3 1.4 4.6 2.5 6.7v.1c8.3 16.7 23.8 24.3 40.3 23 16.6-1.3 34.1-11 48.3-27.9 13.6-16.4 36-23.2 50.9-32.2 7.4-4.5 13.4-10.1 13.9-18.3.4-8.2-4.4-17.3-15.5-29.7zM223.7 87.3c9.8-22.2 34.2-21.8 44-.4 6.5 14.2 3.6 30.9-4.3 40.4-1.6-.8-5.9-2.6-12.6-4.9 1.1-1.2 3.1-2.7 3.9-4.6 4.8-11.8-.2-27-9.1-27.3-7.3-.5-13.9 10.8-11.8 23-4.1-2-9.4-3.5-13-4.4-1-6.9-.3-14.6 2.9-21.8zM183 75.8c10.1 0 20.8 14.2 19.1 33.5-3.5 1-7.1 2.5-10.2 4.6 1.2-8.9-3.3-20.1-9.6-19.6-8.4.7-9.8 21.2-1.8 28.1 1 .8 1.9-.2-5.9 5.5-15.6-14.6-10.5-52.1 8.4-52.1zm-13.6 60.7c6.2-4.6 13.6-10 14.1-10.5 4.7-4.4 13.5-14.2 27.9-14.2 7.1 0 15.6 2.3 25.9 8.9 6.3 4.1 11.3 4.4 22.6 9.3 8.4 3.5 13.7 9.7 10.5 18.2-2.6 7.1-11 14.4-22.7 18.1-11.1 3.6-19.8 16-38.2 14.9-3.9-.2-7-1-9.6-2.1-8-3.5-12.2-10.4-20-15-8.6-4.8-13.2-10.4-14.7-15.3-1.4-4.9 0-9 4.2-12.3zm3.3 334c-2.7 35.1-43.9 34.4-75.3 18-29.9-15.8-68.6-6.5-76.5-21.9-2.4-4.7-2.4-12.7 2.6-26.4v-.2c2.4-7.6.6-16-.6-23.9-1.2-7.8-1.8-15 .9-20 3.5-6.7 8.5-9.1 14.8-11.3 10.3-3.7 11.8-3.4 19.6-9.9 5.5-5.7 9.5-12.9 14.3-18 5.1-5.5 10-8.1 17.7-6.9 8.1 1.2 15.1 6.8 21.9 16l19.6 35.6c9.5 19.9 43.1 48.4 41 68.9zm-1.4-25.9c-4.1-6.6-9.6-13.6-14.4-19.6 7.1 0 14.2-2.2 16.7-8.9 2.3-6.2 0-14.9-7.4-24.9-13.5-18.2-38.3-32.5-38.3-32.5-13.5-8.4-21.1-18.7-24.6-29.9s-3-23.3-.3-35.2c5.2-22.9 18.6-45.2 27.2-59.2 2.3-1.7.8 3.2-8.7 20.8-8.5 16.1-24.4 53.3-2.6 82.4.6-20.7 5.5-41.8 13.8-61.5 12-27.4 37.3-74.9 39.3-112.7 1.1.8 4.6 3.2 6.2 4.1 4.6 2.7 8.1 6.7 12.6 10.3 12.4 10 28.5 9.2 42.4 1.2 6.2-3.5 11.2-7.5 15.9-9 9.9-3.1 17.8-8.6 22.3-15 7.7 30.4 25.7 74.3 37.2 95.7 6.1 11.4 18.3 35.5 23.6 64.6 3.3-.1 7 .4 10.9 1.4 13.8-35.7-11.7-74.2-23.3-84.9-4.7-4.6-4.9-6.6-2.6-6.5 12.6 11.2 29.2 33.7 35.2 59 2.8 11.6 3.3 23.7.4 35.7 16.4 6.8 35.9 17.9 30.7 34.8-2.2-.1-3.2 0-4.2 0 3.2-10.1-3.9-17.6-22.8-26.1-19.6-8.6-36-8.6-38.3 12.5-12.1 4.2-18.3 14.7-21.4 27.3-2.8 11.2-3.6 24.7-4.4 39.9-.5 7.7-3.6 18-6.8 29-32.1 22.9-76.7 32.9-114.3 7.2zm257.4-11.5c-.9 16.8-41.2 19.9-63.2 46.5-13.2 15.7-29.4 24.4-43.6 25.5s-26.5-4.8-33.7-19.3c-4.7-11.1-2.4-23.1 1.1-36.3 3.7-14.2 9.2-28.8 9.9-40.6.8-15.2 1.7-28.5 4.2-38.7 2.6-10.3 6.6-17.2 13.7-21.1.3-.2.7-.3 1-.5.8 13.2 7.3 26.6 18.8 29.5 12.6 3.3 30.7-7.5 38.4-16.3 9-.3 15.7-.9 22.6 5.1 9.9 8.5 7.1 30.3 17.1 41.6 10.6 11.6 14 19.5 13.7 24.6zM173.3 148.7c2 1.9 4.7 4.5 8 7.1 6.6 5.2 15.8 10.6 27.3 10.6 11.6 0 22.5-5.9 31.8-10.8 4.9-2.6 10.9-7 14.8-10.4s5.9-6.3 3.1-6.6-2.6 2.6-6 5.1c-4.4 3.2-9.7 7.4-13.9 9.8-7.4 4.2-19.5 10.2-29.9 10.2s-18.7-4.8-24.9-9.7c-3.1-2.5-5.7-5-7.7-6.9-1.5-1.4-1.9-4.6-4.3-4.9-1.4-.1-1.8 3.7 1.7 6.5z"></path>
+                        </svg>
+                        <!-- Android Icon, will be uncommented when mobile version of the game is released and when we officially add Android support to SDK
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="android" class="svg-inline--fa fa-android fa-w-18 h-8 mr-4 text-gray-500 duration-150 cursor-pointer fill-current transition-color hover:text-gray-600" role="img" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 576 512">
+                            <path fill="currentColor" d="M420.55,301.93a24,24,0,1,1,24-24,24,24,0,0,1-24,24m-265.1,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24m273.7-144.48,47.94-83a10,10,0,1,0-17.27-10h0l-48.54,84.07a301.25,301.25,0,0,0-246.56,0L116.18,64.45a10,10,0,1,0-17.27,10h0l47.94,83C64.53,202.22,8.24,285.55,0,384H576c-8.24-98.45-64.54-181.78-146.85-226.55"></path>
+                        </svg>
+                        -->
+                    </div>
+                </div>
+                <svg class="absolute left-0 max-w-md mt-24 -ml-64 left-svg" viewBox="0 0 423 423"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                        <linearGradient x1="100%" y1="0%" x2="4.48%" y2="0%" id="linearGradient-1">
+                            <stop stop-color="#5C54DB" offset="0%" />
+                            <stop stop-color="#6A82E7" offset="100%" />
+                        </linearGradient>
+                        <filter x="-9.3%" y="-6.7%" width="118.7%" height="118.7%" filterUnits="objectBoundingBox"
+                            id="filter-3">
+                            <feOffset dy="8" in="SourceAlpha" result="shadowOffsetOuter1" />
+                            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+                            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1" />
+                        </filter>
+                        <rect id="path-2" x="63" y="504" width="300" height="300" rx="40" />
+                    </defs>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity=".9">
+                        <g id="Desktop-HD" transform="translate(-39 -531)">
+                            <g id="Hero" transform="translate(43 83)">
+                                <g id="Rectangle-6" transform="rotate(45 213 654)">
+                                    <use fill="#000" filter="url(#filter-3)" xlink:href="#path-2" />
+                                    <use fill="url(#linearGradient-1)" xlink:href="#path-2" />
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- Start Footer -->
+    <footer class="px-4 pt-12 pb-8 text-white bg-white border-t border-gray-200">
+        <div class="container flex flex-col justify-between max-w-6xl px-4 mx-auto overflow-hidden lg:flex-row">
+            <div class="w-full pl-12 mr-4 text-left lg:w-1/4 sm:text-center sm:pl-0 lg:text-left">
+                <a href="#" class="relative flex items-center inline-block h-5 h-full font-black leading-none">
+                    <img src="img/favicon.ico" x="0px" y="0px" width="32" height="32">
+                    <span class="ml-3 text-xl text-gray-800">Nextgen Game Studios<span class="text-pink-500">.</span></span>
+                </a>
+            </div>
+            <div class="block w-full pl-10 mt-6 text-sm lg:w-3/4 sm:flex lg:mt-0">
+                <ul class="flex flex-col w-full p-0 font-medium text-left text-gray-700 list-none">
+                    <li class="inline-block px-3 py-2 mt-5 font-bold tracking-wide text-gray-800 uppercase md:mt-0">Oferta</li>
+                    <li><a href="#_fps3d--" class="inline-block px-3 py-2 text-gray-500 no-underline duration-150 cursor-pointer fill-current transition-color hover:text-gray-600">FPS3D</a>
+                    </li>
+                    <li><a href="#_digitalsapphire-sdk--" class="inline-block px-3 py-2 text-gray-500 no-underline duration-150 cursor-pointer fill-current transition-color hover:text-gray-600">DigitalSapphire</a>
+                    </li>
+                    <li><a href="#_documentation--" class="inline-block px-3 py-2 text-gray-500 no-underline duration-150 cursor-pointer fill-current transition-color hover:text-gray-600">Dokumentacja</a>
+                    </li>
+                    <li><a href="#_frequentlyaskedquestions--" class="inline-block px-3 py-2 text-gray-500 no-underline duration-150 cursor-pointer fill-current transition-color hover:text-gray-600">Często zadawane pytania</a></li>
+                </ul>
+                <ul class="flex flex-col w-full p-0 font-medium text-left text-gray-700 list-none">
+                    <li class="inline-block px-3 py-2 mt-5 font-bold tracking-wide text-gray-800 uppercase md:mt-0">Firma</li>
+                    <li><a href="#_privacypolicy--" class="inline-block px-3 py-2 text-gray-500 no-underline duration-150 cursor-pointer fill-current transition-color hover:text-gray-600">Polityka Prywatności</a></li>
+                    <li><a href="#_termsofservice--" class="inline-block px-3 py-2 text-gray-500 no-underline duration-150 cursor-pointer fill-current transition-color hover:text-gray-600">Warunki Usługi</a></li>
+                </ul>
+                <ul class="flex flex-col w-full p-0 font-medium text-left text-gray-700 list-none">
+                    <li class="inline-block px-3 py-2 mt-5 font-bold tracking-wide text-gray-800 uppercase md:mt-0">Technologie Użyte</li>
+                    <li><a href="https://html5.org/" class="inline-block px-3 py-2 text-gray-500 no-underline duration-150 cursor-pointer fill-current transition-color hover:text-gray-600">HTML5</a></li>
+                    <li><a href="https://www.javascript.com/" class="inline-block px-3 py-2 text-gray-500 no-underline duration-150 cursor-pointer fill-current transition-color hover:text-gray-600">JavaScript</a></li>
+                    <li><a href="https://tailwindcss.com/" class="inline-block px-3 py-2 text-gray-500 no-underline duration-150 cursor-pointer fill-current transition-color hover:text-gray-600">TailwindCSS</a></li>
+                </ul>
+                <div class="flex flex-col w-full text-gray-700">
+                    <div class="inline-block px-3 py-2 mt-5 font-bold text-gray-800 uppercase md:mt-0">Bądź na bieżąco</div>
+                    <div class="flex justify-start pl-4 mt-2">
+                        <a class="flex items-center block mr-6 text-gray-400 no-underline duration-150 cursor-pointer fill-current transition-color hover:text-gray-600" target="_blank" rel="noopener noreferrer" href="#_facebook--">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.998 12c0-6.628-5.372-12-11.999-12C5.372 0 0 5.372 0 12c0 5.988 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.046V9.356c0-3.008 1.792-4.669 4.532-4.669 1.313 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.864 10.124-11.853z" />
+                            </svg>
+                        </a>
+                        <a class="flex items-center block mr-6 text-gray-400 no-underline duration-150 cursor-pointer fill-current transition-color hover:text-gray-600" target="_blank" rel="noopener noreferrer" href="#_twitter--">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z" />
+                            </svg>
+                        </a>
+                        <a class="flex items-center block text-gray-400 no-underline duration-150 cursor-pointer fill-current transition-color hover:text-gray-600" target="_blank" rel="noopener noreferrer" href="#_github--">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-4 pt-6 mt-10 text-center text-gray-500 border-t border-gray-100">© 2021 &mdash; <script>document.write(new Date().getFullYear());</script> <a href="https://nextgengamestudios.github.io/" class="text-gray-500 duration-150 cursor-pointer fill-current transition-color hover:text-gray-600">Nextgen Game Studios</a>. Wszelkie prawa zastrzeżone.</div>
+            <div class="pt-2 pt-4 mt-2 text-center text-gray-500 border-t border-gray-100">Strona stworzona przez <a href="https://github.com/tomeczeklmaodev/#--xtkg0d4" class="text-gray-500 duration-150 cursor-pointer fill-current transition-color hover:text-gray-600">tomeczeklmaodev</a></div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Countdown -->
+    <script>
+        var countDownDate = new Date("Oct 15, 2021 11:00:00").getTime();
+
+        var x = setInterval(function() {
+
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "Odliczanie Wygaśnięte";
+        }
+        }, 1000);
+    </script>
+</body>
 </html>
